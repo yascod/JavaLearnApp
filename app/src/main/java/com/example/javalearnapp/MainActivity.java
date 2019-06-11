@@ -1,5 +1,6 @@
 package com.example.javalearnapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -11,24 +12,56 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button variable;
+    private Button ifelse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        variable = (Button) findViewById(R.id.variable);
+        ifelse = (Button) findViewById(R.id.ifelse);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
+       /* FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
+        });*/
+
+
+        variable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityVariable();
+            }
         });
+
+        ifelse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openActivityIfElse();
+            }
+        });
+
+    }
+
+    public void openActivityVariable(){
+        Intent intent = new Intent(this, Variable.class);
+        startActivity(intent);
+    }
+
+    public void openActivityIfElse(){
+        Intent intent2 = new Intent(this, IfElse.class);
+        startActivity(intent2);
     }
 
     @Override

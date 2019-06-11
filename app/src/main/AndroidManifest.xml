@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".IfElse"
+            android:label="@string/title_activity_if_else"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Variable"
+            android:label="@string/title_activity_variable"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
