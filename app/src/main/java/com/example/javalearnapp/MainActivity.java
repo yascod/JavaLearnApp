@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         ifelse.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 openActivityIfElse();
             }
         });

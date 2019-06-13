@@ -3,4 +3,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_variable">Variable</string>
     <string name="title_activity_if_else">IfElse</string>
+    <string name="title_activity_aufgabe1">Aufgabe1</string>
+    <string name="title_activity_aufgabe2">Aufgabe2</string>
 </resources>
