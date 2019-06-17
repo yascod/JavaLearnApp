@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Aufgabe1IfElse"
+            android:label="@string/title_activity_aufgabe1_if_else"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".Aufgabe2"
             android:label="@string/title_activity_aufgabe2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Aufgabe1"
             android:label="@string/title_activity_aufgabe1"
