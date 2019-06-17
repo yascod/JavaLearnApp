@@ -8,4 +8,9 @@
     tools:context=".Aufgabe2"
     tools:showIn="@layout/activity_aufgabe2">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

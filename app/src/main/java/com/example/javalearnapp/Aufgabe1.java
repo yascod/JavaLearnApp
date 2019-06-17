@@ -96,6 +96,7 @@ public class Aufgabe1 extends AppCompatActivity {
 
     public void openActivityAufgabe1(){
         Intent intent2 = new Intent(this, Aufgabe1.class);
+        finish();
         startActivity(intent2);
     }
 
